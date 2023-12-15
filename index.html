@@ -13,7 +13,7 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
 
   <!-- 
     - google font link
@@ -61,23 +61,23 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="home.html" class="navbar-link">Home</a>
+            <a href="#home" class="navbar-link">Home</a>
           </li>
 
           <li>
-            <a href="about.html" class="navbar-link">About</a>
+            <a href="#about" class="navbar-link">About</a>
           </li>
 
           <li>
-            <a href="projects.html" class="navbar-link">Projects</a>
+            <a href="#project-label" class="navbar-link">Project</a>          
           </li>
 
           <li>
-            <a href="blog.html" class="navbar-link">Blog</a>
+            <a href="#blog" class="navbar-link">Blog</a>
           </li>
 
           <li>
-            <a href="contact.html" class="navbar-link">Contact</a>
+            <a href="#contact" class="navbar-link">Contact</a>
           </li>
 
         </ul>
@@ -144,7 +144,7 @@
         - #HERO
       -->
 
-      <section class="section hero" aria-label="home">
+      <section class="section hero" aria-labelledby="home" id="home" >
         <div class="container">
 
           <figure class="hero-banner">
@@ -185,7 +185,7 @@
         - #ABOUT
       -->
 
-      <section class="section about" aria-label="about">
+      <section class="section about" aria-labelledby="about" id="about">
         <div class="container">
 
           <div class="wrapper">
@@ -343,14 +343,67 @@
       </section>
 
 
+<!-- 
+  - #BLOG
+-->
+
+<section class="section blog" aria-labelledby="blog" id="blog">
+  <div class="container">
+    <div class="title-wrapper" data-reveal="top">
+
+      <div>
+        <h2 class="h2 section-title" id="blog-label">Blog</h2>
+        <p class="section-text">
+          Explore the latest thoughts and insights.
+        </p>
+      </div>
+
+    </div>
+    <div class="blog-posts">
+      <!-- Blog Post 1 -->
+      <article class="blog-post">
+        <img src="./assets/images/blog1.jpg" alt="Image for Blog Post 1" class="blog-image">
+        <h3 class="h3 blog-title">Apa jadinya dunia tanpa ilmu matematika?</h3>
+        <p class="blog-meta">Published on December 15, 2023</p>
+        <p class="blog-excerpt">Short excerpt or summary of the blog post goes here.</p>
+        <a href="https://belajar-bersama-hanageofani.blogspot.com/2023/12/ahli-matematika-paling-berjasa.html" class="btn btn-secondary">Read More</a>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="blog-post">
+        <img src="./assets/images/blog3.jpg" alt="Image for Blog Post 2" class="blog-image">
+        <h3 class="h3 blog-title">Pengertian Dikotil dan Monokotil: Perbedaan dan Manfaatnya</h3>
+        <p class="blog-meta">Published on December 15, 2023</p>
+        <p class="blog-excerpt">Short excerpt or summary of the blog post goes here.</p>
+        <a href="https://belajar-bersama-hanageofani.blogspot.com/2023/12/pengertian-dikotil-dan-monokotil.html" class="btn btn-secondary">Read More</a>
+      </article>
 
 
+      <!-- Blog Post 1 -->
+      <article class="blog-post">
+        <img src="./assets/images/blog4.jpg" alt="Image for Blog Post 1" class="blog-image">
+        <h3 class="h3 blog-title">Manusia Makhluk Sosial</h3>
+        <p class="blog-meta">Published on December 15, 2023</p>
+        <p class="blog-excerpt">Short excerpt or summary of the blog post goes here.</p>
+        <a href="https://belajar-bersama-hanageofani.blogspot.com/2023/12/manusia-makhluk-sosial.html" class="btn btn-secondary">Read More</a>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="blog-post">
+        <img src="./assets/images/blog2.jpg" alt="Image for Blog Post 2" class="blog-image">
+        <h3 class="h3 blog-title">Pythagoras: Teorema, Rumus, dan Contoh Soal</h3>
+        <p class="blog-meta">Published on December 15, 2023</p>
+        <p class="blog-excerpt">Short excerpt or summary of the blog post goes here.</p>
+        <a href="https://belajar-bersama-hanageofani.blogspot.com/2023/12/pythagoras-teorema-rumus-dan-contoh-soal.html" class="btn btn-secondary">Read More</a>
+      </article>
+  </div>
+</section>
 
       <!-- 
         - #PROJECT
       -->
 
-      <section class="section project" aria-labelledby="project-label">
+      <section class="section project" aria-labelledby="project-label" id="project-label">
         <div class="container">
 
           <div class="title-wrapper" data-reveal="top">
@@ -363,7 +416,7 @@
               </p>
             </div>
 
-            <a href="#" class="btn btn-secondary">See All Projects</a>
+            <!-- <a href="#project-label" class="btn btn-secondary">See All Projects</a> -->
 
           </div>
 
@@ -376,14 +429,15 @@
 
                   <p class="card-tag" style="color: #a07cc5">Web Design</p>
 
-                  <h3 class="h3 card-title">Snowlake Theme</h3>
+                  <h3 class="h3 card-title">News Portal 25 by Group 25</h3>
 
                   <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula
-                    porta felis euismod semper. Fusce dapibus tellus cursus.
+                    A web news portal is an online platform that provides current news from various fields such as politics, 
+                    economics, technology, sports, and more in the form of informative articles, 
+                    allowing users to access the latest information quickly and easily.
                   </p>
 
-                  <a href="#" class="btn-text" style="color: #a07cc5">
+                  <a href="https://kampus-merdeka-software-engineering.github.io/FE-2-section-surabaya-group-25/" class="btn-text" style="color: #a07cc5">
                     <span class="span">See Project</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -392,7 +446,7 @@
                 </div>
 
                 <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-1.png" width="650" height="370" loading="lazy" alt="Web Design"
+                  <img src="./assets/images/newsportal25.jpg" width="650" height="370" loading="lazy" alt="Web Design"
                     class="w-100">
                 </figure>
 
@@ -404,16 +458,17 @@
 
                 <div class="card-content" data-reveal="right">
 
-                  <p class=" card-tag" style="color: #3f78e0">Mobile Design</p>
+                  <p class=" card-tag" style="color: #3f78e0">Web Design</p>
 
-                  <h3 class="h3 card-title">Budget App</h3>
+                  <h3 class="h3 card-title">Book Store</h3>
 
                   <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula
-                    porta felis euismod semper. Fusce dapibus tellus cursus.
+                    A web book store is an online platform where users can explore, buy, and access a wide range of books across different genres. 
+                    It offers search options, secure payment, book previews, user reviews, and delivery services, 
+                    making it convenient for book enthusiasts to discover and purchase books from their devices.
                   </p>
 
-                  <a href="#" class="btn-text" style="color: #3f78e0">
+                  <a href="https://hanageofanii.github.io/RPL-BookStore/" class="btn-text" style="color: #3f78e0">
                     <span class="span">See Project</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -422,14 +477,14 @@
                 </div>
 
                 <figure class="card-banner" data-reveal="left">
-                  <img src="./assets/images/project-2.png" width="600" height="367" loading="lazy" alt="Web Design"
+                  <img src="./assets/images/bookstore.png" width="600" height="367" loading="lazy" alt="Web Design"
                     class="w-100">
                 </figure>
 
               </div>
             </li>
 
-            <li>
+            <!-- <li>
               <div class="project-card project-card-3" style="background-color: #f5faf7">
 
                 <div class="card-content" data-reveal="left">
@@ -487,7 +542,7 @@
                 </figure>
 
               </div>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -502,7 +557,7 @@
         - #CONTACT
       -->
 
-      <section class="section contact" aria-label="contact">
+      <section class="section contact" aria-labelledby="contact" id="contact">
         <div class="container">
 
           <div class="contact-card">
@@ -522,25 +577,50 @@
 
             </div>
 
-            <form action="" class="contact-form" data-reveal="right">
-
+            <form id="myForm" action="https://formspree.io/f/xoqgaqez" method="POST" enctype="multipart/form-data">
               <div class="input-wrapper">
                 <input type="text" name="name" placeholder="Name *" required class="input-field">
-
                 <input type="email" name="email_address" placeholder="Email *" required class="input-field">
               </div>
-
               <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
-
               <button type="submit" class="btn btn-secondary">Send message</button>
-
+              <div id="messageSent" style="display: none;">
+                <p>Message sent successfully!</p>
+                <p>Thank you for reaching out. We will get back to you soon.</p>
+              </div>
             </form>
-
-          </div>
-
+            
+            <script>
+              document.getElementById("myForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Menghentikan perilaku default pengiriman formulir
+            
+                // Ambil data formulir
+                var formData = new FormData(this);
+            
+                // Kirim data formulir ke Formspree menggunakan AJAX
+                fetch(this.action, {
+                  method: 'POST',
+                  body: formData,
+                  headers: {
+                    'Accept': 'application/json'
+                  }
+                })
+                .then(response => {
+                  // Tangani respons dari Formspree
+                  console.log('Success!', response);
+                  // Kosongkan nilai dari input setelah pengiriman berhasil
+                  document.getElementById("myForm").reset();
+                  // Tampilkan pesan bahwa pesan berhasil terkirim
+                  document.getElementById("messageSent").style.display = "block";
+                })
+                .catch(error => {
+                  // Tangani jika terjadi kesalahan
+                  console.error('Error:', error);
+                });
+              });
+            </script>                                                    
         </div>
       </section>
-
     </article>
   </main>
 

@@ -4,15 +4,15 @@
    * colors
    */
 
-  --white: hsla(0, 0%, 100%, 1);
+  --white: rgb(236, 255, 255);
   --white_a8: hsla(0, 0%, 100%, 0.08);
   --white_a12: hsla(0, 0%, 100%, 0.12);
   --cultured: hsla(220, 20%, 97%, 1);
-  --snow: hsla(345, 57%, 97%, 1);
+  --snow: rgb(243, 246, 252);
   --manatee: hsla(219, 10%, 62%, 1);
   --black-coral: hsla(220, 12%, 43%, 1);
   --cadet-blue-crayola_a20: hsla(222, 23%, 71%, 0.2);
-  --cinnamon-satin: hsla(344, 53%, 62%, 1);
+  --cinnamon-satin: rgb(107, 178, 209);
   --raisin-black: hsla(216, 14%, 14%, 1);
   --raisin-black_a6: hsla(216, 14%, 14%, 0.06);
   --gunmetal: hsla(214, 15%, 21%, 1);
@@ -844,8 +844,42 @@ textarea.input-field {
 
 }
 
+/* Section Blog */
+.section.blog {
+  overflow-x: auto; /* Membuat area scroll horizontal */
+  padding-bottom: 20px; /* Memberikan ruang di bawah untuk tampilan yang lebih baik */
 
+  /* Menggunakan flexbox untuk membuat grid yang bisa digeser */
+  display: flex;
+  flex-wrap: nowrap; /* Mencegah pemutaran ke baris baru */
+}
 
+/* Setiap posting blog */
+/* CSS */
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Menentukan jumlah kolom dan lebar minimum maksimum */
+  grid-gap: 20px; /* Jarak antar posting */
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc; /* Contoh border */
+  padding: 10px;
+}
+
+.blog-post a.btn {
+  margin-top: auto; /* Geser tombol ke bagian bawah */
+  width: fit-content; /* Sesuaikan lebar dengan isi */
+  align-self: flex-end /* Geser tombol ke tengah */
+}
+
+.blog-image {
+  width: 100%; /* Lebar gambar 100% dari container */
+  height: auto; /* Ketinggian otomatis sesuai aspek rasio gambar */
+  object-fit: cover; /* Mengisi area gambar sesuai proporsi aspek rasio */
+}
 
 
 /**
